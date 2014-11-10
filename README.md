@@ -1,4 +1,4 @@
-# co-once
+# co-once [![Build Status](https://travis-ci.org/purposeindustries/co-once.svg)](https://travis-ci.org/purposeindustries/co-once) [![Coverage Status](https://coveralls.io/repos/purposeindustries/co-once/badge.png)](https://coveralls.io/r/purposeindustries/co-once)
 
 Wrap a generator that can be called only once, like `_.once`.
 
