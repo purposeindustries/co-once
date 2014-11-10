@@ -1,6 +1,6 @@
 {
   "name": "co-once",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wrap a generator that can be called only once",
   "main": "index.js",
   "scripts": {
