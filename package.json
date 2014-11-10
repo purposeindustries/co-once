@@ -1,0 +1,34 @@
+{
+  "name": "co-once",
+  "version": "1.0.0",
+  "description": "Wrap a generator that can be called only once",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony --reporter spec --require should --require co-mocha test.js",
+    "test-bg": "mocha --harmony --watch --reporter min --require should --require co-mocha test.js",
+    "cover": "node --harmony node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- --reporter dot --require should --require co-mocha test.js",
+    "coveralls": "node --harmony node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- --reporter dot --require should --require co-mocha test.js && cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/purposeindustries/co-once"
+  },
+  "keywords": [
+    "co",
+    "geenrator",
+    "once"
+  ],
+  "author": "Bence Dányi <bence@danyi.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/purposeindustries/co-once/issues"
+  },
+  "homepage": "https://github.com/purposeindustries/co-once",
+  "devDependencies": {
+    "co-mocha": "^1.0.3",
+    "coveralls": "^2.11.2",
+    "istanbul": "git://github.com/gotwarlost/istanbul.git#harmony",
+    "mocha": "^2.0.1",
+    "should": "^4.2.1"
+  }
+}
